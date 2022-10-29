@@ -8,13 +8,15 @@
 import UIKit
 
 class GreetingViewController: UIViewController {
-
+    
+    @IBOutlet var welcomeLabel: UILabel!
+    
     var quote: [Quote]!
     var userName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = userName ?? "" // проверка
+        welcomeLabel.text = userName ?? "" // проверка
 
     }
     

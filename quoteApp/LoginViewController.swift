@@ -29,9 +29,7 @@ class LoginViewController: UIViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         
         viewControllers.forEach {
-            if let navigationVC = $0 as? UINavigationController {
-                let greetingVC = navigationVC.topViewController
-                guard let greetingVC = greetingVC as? GreetingViewController else { return }
+            if let greetingVC = $0 as? GreetingViewController {
                 greetingVC.quote = quote
                 greetingVC.userName = user.login // проверка 
             } else if let navigationVC = $0 as? UINavigationController {
