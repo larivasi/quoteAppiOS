@@ -10,9 +10,6 @@ struct Quote {
     let source: String
     let category: Category
     
-    let families = [Quote].self
-    
-    
     static func getQuote() -> [Quote] {
         [
             Quote(

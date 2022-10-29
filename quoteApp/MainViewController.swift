@@ -11,10 +11,16 @@ class MainViewController: UIViewController {
 
     @IBOutlet var categoriesTableView: UITableView!
     
+    var quote: [Quote]!
+    var userName: String! // проверка 
+    
     let categories = Category.allValues
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = userName ?? "" // проверка
+        
+
     }
 }
 
