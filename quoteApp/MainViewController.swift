@@ -38,7 +38,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuotesVC") as? QuotesViewController else { return }
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuotesVC") as? QuotesTableViewController else { return }
       
         present(vc, animated: true)
     }

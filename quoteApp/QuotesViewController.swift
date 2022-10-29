@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuotesViewController: UIViewController {
+class QuotesTableViewController: UITableViewController {
 
     
     override func viewDidLoad() {
