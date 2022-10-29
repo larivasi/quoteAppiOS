@@ -11,14 +11,37 @@
         <!--Quotes-->
         <scene sceneID="5X2-NF-kvS">
             <objects>
-                <viewController id="MzI-tS-k0G" sceneMemberID="viewController">
+                <viewController id="MzI-tS-k0G" customClass="QuotesViewController" customModule="quoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QJL-uI-ZIu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="awO-Aa-BeK">
+                                <rect key="frame" x="0.0" y="145" width="390" height="616"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="quoteCell" id="7YQ-LK-Eak">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7YQ-LK-Eak" id="lmk-tw-WIt">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OV7-ab-Xh5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OV7-ab-Xh5" firstAttribute="trailing" secondItem="awO-Aa-BeK" secondAttribute="trailing" id="B9M-dO-RCp"/>
+                            <constraint firstItem="awO-Aa-BeK" firstAttribute="top" secondItem="OV7-ab-Xh5" secondAttribute="top" id="EUu-fI-SbV"/>
+                            <constraint firstItem="OV7-ab-Xh5" firstAttribute="bottom" secondItem="awO-Aa-BeK" secondAttribute="bottom" id="Tfb-cN-JCi"/>
+                            <constraint firstItem="awO-Aa-BeK" firstAttribute="leading" secondItem="OV7-ab-Xh5" secondAttribute="leading" id="UmL-px-amm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Quotes" image="quote.bubble.fill" catalog="system" id="fgt-Am-zHR"/>
+                    <navigationItem key="navigationItem" id="0za-s2-1kn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jmj-aS-Di5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,17 +63,49 @@
             </objects>
             <point key="canvasLocation" x="5966" y="-1782"/>
         </scene>
-        <!--Добрый день,-->
+        <!--Цитаты-->
         <scene sceneID="dpI-66-zHP">
             <objects>
-                <viewController id="iQb-Hd-XK8" sceneMemberID="viewController">
+                <viewController id="iQb-Hd-XK8" customClass="MainViewController" customModule="quoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MjY-Mf-P5z">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oxl-AZ-Us5">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categoryCell" id="Q0l-7s-eeA">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0l-7s-eeA" id="tjl-GL-oEZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="MzI-tS-k0G" kind="show" id="EzU-hR-OyM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iQb-Hd-XK8" id="ta8-UI-c5P"/>
+                                    <outlet property="delegate" destination="iQb-Hd-XK8" id="jwJ-D1-Si3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gMN-Dw-8x8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oxl-AZ-Us5" firstAttribute="top" secondItem="gMN-Dw-8x8" secondAttribute="top" id="5NT-5Z-Gku"/>
+                            <constraint firstItem="gMN-Dw-8x8" firstAttribute="bottom" secondItem="oxl-AZ-Us5" secondAttribute="bottom" id="Hcn-9I-Xi8"/>
+                            <constraint firstItem="gMN-Dw-8x8" firstAttribute="trailing" secondItem="oxl-AZ-Us5" secondAttribute="trailing" id="bi2-vP-iwU"/>
+                            <constraint firstItem="oxl-AZ-Us5" firstAttribute="leading" secondItem="gMN-Dw-8x8" secondAttribute="leading" id="i9H-w4-pVX"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Добрый день," id="EqC-1u-pZ4"/>
+                    <navigationItem key="navigationItem" title="Цитаты" largeTitleDisplayMode="always" id="EqC-1u-pZ4"/>
+                    <connections>
+                        <outlet property="categoriesTableView" destination="oxl-AZ-Us5" id="v5P-HL-cgE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBr-Vf-3Zm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,8 +137,14 @@
                     <tabBarItem key="tabBarItem" title="Main" image="star.fill" catalog="system" id="x4E-Mh-v17"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ezs-pO-ycP">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -95,6 +156,9 @@
             <point key="canvasLocation" x="1545" y="-1782"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EzU-hR-OyM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="quote.bubble.fill" catalog="system" width="128" height="110"/>

@@ -221,5 +221,8 @@ enum Category: String {
     case money = "деньги"
     case life = "жизнь"
     case family = "семья"
+    
+    static let allValues = [friendship, money, life, family]
+    
 }
 

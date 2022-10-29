@@ -18,7 +18,7 @@ class TabBarController: UITabBarController {
     private func generateTabBar() {
         viewControllers = [
             generateVC(
-                viewController: ViewController(),
+                viewController: MainViewController(),
                 title: "Main",
                 image: UIImage(systemName: "house.fill"))
 //            ),
