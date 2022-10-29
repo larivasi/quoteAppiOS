@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123482A2290CED8A00DCAF9C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123482A1290CED8A00DCAF9C /* Quote.swift */; };
 		B1569F1D290C0B5000E481FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1569F1C290C0B5000E481FD /* AppDelegate.swift */; };
 		B1569F1F290C0B5000E481FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1569F1E290C0B5000E481FD /* SceneDelegate.swift */; };
 		B1569F21290C0B5000E481FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1569F20290C0B5000E481FD /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123482A1290CED8A00DCAF9C /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		B1569F19290C0B5000E481FD /* quoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1569F1C290C0B5000E481FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1569F1E290C0B5000E481FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123482A0290CED7200DCAF9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				123482A1290CED8A00DCAF9C /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B1569F10290C0B5000E481FD = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		B1569F1B290C0B5000E481FD /* quoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				123482A0290CED7200DCAF9C /* Models */,
 				B1569F1C290C0B5000E481FD /* AppDelegate.swift */,
 				B1569F1E290C0B5000E481FD /* SceneDelegate.swift */,
 				B1569F20290C0B5000E481FD /* ViewController.swift */,
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1569F21290C0B5000E481FD /* ViewController.swift in Sources */,
+				123482A2290CED8A00DCAF9C /* Quote.swift in Sources */,
 				B1569F35290CE51A00E481FD /* TabBarController.swift in Sources */,
 				B1569F1D290C0B5000E481FD /* AppDelegate.swift in Sources */,
 				B1569F1F290C0B5000E481FD /* SceneDelegate.swift in Sources */,
