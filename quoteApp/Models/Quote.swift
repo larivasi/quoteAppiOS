@@ -10,7 +10,10 @@ struct Quote {
     let source: String
     let category: Category
     
-    static func getQuote() {
+    let families = [Quote].self
+    
+    
+    static func getQuote() -> [Quote] {
         [
             Quote(
                 text: "Дружба двух святош делает более зла, чем открытая вражда десяти негодяев.",

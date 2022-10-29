@@ -27,7 +27,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         let categoryName = categories[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "quoteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = categoryName.rawValue
         
@@ -39,7 +39,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuotesVC") as? QuotesTableViewController else { return }
-      
+        let categoryName = categories[indexPath.row]
+
+        vc.categoryName = categoryName.rawValue
         present(vc, animated: true)
     }
     
