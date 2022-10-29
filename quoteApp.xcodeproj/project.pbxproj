@@ -13,6 +13,7 @@
 		B1569F24290C0B5000E481FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1569F22290C0B5000E481FD /* Main.storyboard */; };
 		B1569F26290C0B5100E481FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1569F25290C0B5100E481FD /* Assets.xcassets */; };
 		B1569F29290C0B5100E481FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1569F27290C0B5100E481FD /* LaunchScreen.storyboard */; };
+		B1569F35290CE51A00E481FD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1569F34290CE51A00E481FD /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B1569F25290C0B5100E481FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1569F28290C0B5100E481FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1569F2A290C0B5100E481FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1569F34290CE51A00E481FD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				B1569F1E290C0B5000E481FD /* SceneDelegate.swift */,
 				B1569F20290C0B5000E481FD /* ViewController.swift */,
 				B1569F22290C0B5000E481FD /* Main.storyboard */,
+				B1569F34290CE51A00E481FD /* TabBarController.swift */,
 				B1569F25290C0B5100E481FD /* Assets.xcassets */,
 				B1569F27290C0B5100E481FD /* LaunchScreen.storyboard */,
 				B1569F2A290C0B5100E481FD /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1569F21290C0B5000E481FD /* ViewController.swift in Sources */,
+				B1569F35290CE51A00E481FD /* TabBarController.swift in Sources */,
 				B1569F1D290C0B5000E481FD /* AppDelegate.swift in Sources */,
 				B1569F1F290C0B5000E481FD /* SceneDelegate.swift in Sources */,
 			);
