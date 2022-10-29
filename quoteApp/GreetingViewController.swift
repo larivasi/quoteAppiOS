@@ -1,5 +1,5 @@
 //
-//  QuotesViewController.swift
+//  GreetingViewController.swift
 //  quoteApp
 //
 //  Created by Байсаев Зубайр on 29.10.2022.
@@ -7,15 +7,13 @@
 
 import UIKit
 
-class QuotesViewController: UIViewController {
+class GreetingViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
     
 
     /*

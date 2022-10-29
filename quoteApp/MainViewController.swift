@@ -27,9 +27,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         let categoryName = categories[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "quoteCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = categoryName.rawValue
+        
+        cell.contentConfiguration = content
   
         return cell
     }
