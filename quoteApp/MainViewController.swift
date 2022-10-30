@@ -46,7 +46,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuotesVC") as? QuotesTableViewController else { return }
         let categoryName = categories[indexPath.row]
-
+        vc.quote = quote
         vc.categoryName = categoryName.rawValue
         present(vc, animated: true)
     }
